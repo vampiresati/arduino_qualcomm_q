@@ -9,7 +9,7 @@ void on_alexa_led(bool state) {
 
 void off_alexa_led(bool state) {
   // UNO Q's built-in LED may be active-low.
-  digitalWrite(LED_PIN, state ? LOW : HIGH);
+  digitalWrite(LED_PIN, state ? HIGH : LOW);
 }
 
 
