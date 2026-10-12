@@ -2,14 +2,14 @@
 
 const int LED_PIN = LED_BUILTIN;
 
-void on_alexa_led(bool state) {
+void on_alexa_led() {
   // UNO Q's built-in LED may be active-low.
-  digitalWrite(LED_PIN, state ? LOW : HIGH);
+  digitalWrite(LED_PIN,  LOW);
 }
 
-void off_alexa_led(bool state) {
+void off_alexa_led() {
   // UNO Q's built-in LED may be active-low.
-  digitalWrite(LED_PIN, state ? HIGH : LOW);
+  digitalWrite(LED_PIN, HIGH);
 }
 
 
