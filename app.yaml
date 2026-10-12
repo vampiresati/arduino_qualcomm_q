@@ -1,0 +1,9 @@
+
+name: Qualcomm Audio Classification
+description: "Run a trained Edge Impulse audio model on Arduino UNO Q"
+icon: "🎙️"
+ports: []
+bricks:
+  - arduino:audio_classification:
+      variables:
+        EI_AUDIO_CLASSIFICATION_MODEL: /home/arduino/.arduino-bricks/ei-models/turn_on_off_alexa.eim
