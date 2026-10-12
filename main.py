@@ -7,13 +7,13 @@ spotter = KeywordSpotting()
 
 
 def on_wake_word():
-    logger.info("Wake word detected")
-    Bridge.call("on_alexa_led", True)
+    logger.info("Turn on wake word detected")
+    Bridge.call("on_alexa_led")
 
 
 def off_wake_word():
-    logger.info("Wake word detected")
-    Bridge.call("off_alex_led", True)
+    logger.info("Turn off wake word detected")
+    Bridge.call("off_alexa_led")
 
 
 spotter.on_detect("turn_on_alexa", on_wake_word)
